@@ -35,5 +35,17 @@ namespace TourismV3.Views
         {
             Frame.Navigate(typeof(RestAdmin));
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            int index = 0;
+            int itemCount = this.RestaList.Items.Count;
+            if (itemCount == 0)
+                return;
+            if (index >= itemCount)
+                index = itemCount - 1;
+
+            this.RestaList.SelectedIndex = index;
+        }
     }
 }

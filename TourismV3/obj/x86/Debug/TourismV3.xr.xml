@@ -25,6 +25,7 @@
       <RootProperty Name="BottomAppBar" />
       <RootProperty Name="Content" />
       <RootProperty Name="NavigationCacheMode" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="TourismV3.ViewModels.RestViewModel" />
     <RootType FullName="System.String" />
