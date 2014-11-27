@@ -49,7 +49,7 @@
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
     <build:Item Name="MSTestFramework" Version="11.0" />
     <build:Item Name="TestPlatform" Version="11.0" />
-    <build:Item Name="SQLite.WinRT81" Version="3.8.7.2" />
+    <build:Item Name="SQLite.WinRT81" Version="3.8.4.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
   </build:Metadata>
 </Package>

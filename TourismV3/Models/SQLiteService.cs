@@ -16,5 +16,6 @@ namespace TourismV3
         ObservableCollection<RestModel> GetRestaurants();
         bool addRestaurant(RestModel NewOne);
         bool delRestaurant(RestModel NewOne);
+        bool updateRestaurant(RestModel NewOne);
     }
 }

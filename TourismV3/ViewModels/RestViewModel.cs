@@ -15,7 +15,7 @@ using Windows.UI.Popups;
 
 namespace TourismV3.ViewModels
 {
-    public class RestViewModel:INotifyPropertyChanged
+    public class RestViewModel : INotifyHandler, INotifyPropertyChanged
     {
         private SQLiteService _data;
         private ObservableCollection<RestModel> _restaurants;
@@ -24,6 +24,7 @@ namespace TourismV3.ViewModels
 
         public RelayCommand AddRestCommand { get; set; }
         public RelayCommand DelRestCommand { get; set; }
+        public RelayCommand UpdateRestCommand { get; set; }
         public RestModel SelectedRestaurant
         {
             get { return this._selectedRestaurant; }
@@ -50,6 +51,8 @@ namespace TourismV3.ViewModels
             this.AddRestCommand = new RelayCommand(insertRestaurant);
             this.Restaurants = _data.GetRestaurants();
             this.DelRestCommand = new RelayCommand(deleteRestaurant);
+            this.UpdateRestCommand = new RelayCommand(updateRestaurant);
+            
         }
 
         public void insertRestaurant(Object obj)
@@ -78,13 +81,16 @@ namespace TourismV3.ViewModels
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void NotifyPropertyChanged(string propertyName)
+        public void updateRestaurant(Object obj)
         {
-            var handler = this.PropertyChanged;
-            if (handler != null)
+            bool success = _data.updateRestaurant(SelectedRestaurant);
+            if (success)
             {
-                handler(this, new PropertyChangedEventArgs(propertyName));
+                this.Restaurants = _data.GetRestaurants();
+            }
+            else
+            {
+                ;
             }
         }
     }

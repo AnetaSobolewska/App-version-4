@@ -10,19 +10,8 @@ using System.ComponentModel;
 
 namespace TourismV3.Models
 {
-    public class RestModel:INotifyPropertyChanged
-    {
-        // ADDED BY DAN - setting up the event handler for changed properties
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void NotifyPropertyChanged(string propertyName)
-        {
-            var handler = this.PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-        
+    public class RestModel : INotifyHandler, INotifyPropertyChanged
+    {     
         // ADDED BY DAN - setting up private fields
         int _Id;
         string _restName;

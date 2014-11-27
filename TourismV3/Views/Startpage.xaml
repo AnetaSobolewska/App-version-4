@@ -8,7 +8,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    NavigationCacheMode="Enabled" FontFamily="Global User Interface">
+    FontFamily="Global User Interface"
+    Loaded="Page_Loaded"
+    >
 
     <Page.DataContext>
         <myViewModel:RestViewModel></myViewModel:RestViewModel>
@@ -57,15 +59,16 @@
                     <GradientStop Color="Gold" Offset="1"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <ListView
-                        Height="Auto" 
-                        Width="280"
-                        Margin="0,0,0,0" 
-                        ItemsSource="{Binding Restaurants}"
-                        SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
-                        ScrollViewer.VerticalScrollBarVisibility="Visible"
-                        ScrollViewer.VerticalScrollMode="Enabled"
-                        >
+            <ListView 
+                x:Name="RestaList"
+                Height="Auto" 
+                Width="280"
+                Margin="0,0,0,0" 
+                ItemsSource="{Binding Restaurants}"
+                SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
+                ScrollViewer.VerticalScrollBarVisibility="Visible"
+                ScrollViewer.VerticalScrollMode="Enabled"
+                >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Margin="0,0,0,0" Height="Auto" Width="Auto">

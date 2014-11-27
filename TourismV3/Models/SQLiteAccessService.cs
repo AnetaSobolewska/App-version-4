@@ -107,5 +107,33 @@ namespace TourismV3.DAL
             }
         }
 
+        public bool updateRestaurant(RestModel SelectedRestaurant)
+        {
+            using (var db = new SQLite.SQLiteConnection(App.DBPath))
+            {
+                try
+                {
+                    int success = db.Update(new RestTable()
+                    {
+                        Id = SelectedRestaurant.ID,
+                        RestName = SelectedRestaurant.RestName,
+                        RestAddress = SelectedRestaurant.RestAddress,
+                        RestPhone = SelectedRestaurant.RestPhone,
+                        RestFood = SelectedRestaurant.RestFood,
+                        RestDescription = SelectedRestaurant.RestDescription,
+                        RestPicture1 = SelectedRestaurant.RestPicture1,
+                        RestPicture2 = SelectedRestaurant.RestPicture2
+                    });
+                    return true;
+
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+
+                }
+            }
+        }
+
     }
 }
