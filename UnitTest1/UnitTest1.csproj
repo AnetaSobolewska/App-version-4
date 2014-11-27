@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{548dbdf1-2dba-43f1-b08c-5da2464904d7}</ProjectGuid>
+    <ProjectGuid>{548DBDF1-2DBA-43F1-B08C-5DA2464904D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTest1</RootNamespace>
-    <AssemblyName>UnitTest1</AssemblyName>    
+    <AssemblyName>UnitTest1</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
@@ -108,7 +108,7 @@
     <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>
   </PropertyGroup>
   <ItemGroup>
-     <!--A reference to the entire .Net Framework and Windows SDK are automatically included--> 
+    <!--A reference to the entire .Net Framework and Windows SDK are automatically included-->
     <SDKReference Include="MSTestFramework, Version=11.0" />
     <SDKReference Include="TestPlatform, Version=11.0" />
   </ItemGroup>
@@ -116,25 +116,31 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
- <ItemGroup>
+  <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="UnitTest1_TemporaryKey.pfx" />
- </ItemGroup>
- <ItemGroup>
-	<Content Include="Images\UnitTestLogo.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
-	<Content Include="Images\UnitTestSmallLogo.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
-	<Content Include="Images\UnitTestSplashScreen.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
-	<Content Include="Images\UnitTestStoreLogo.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\UnitTestLogo.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\UnitTestSmallLogo.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\UnitTestSplashScreen.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\UnitTestStoreLogo.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TourismV3\TourismV3.csproj">
+      <Project>{57a9f3f1-4bb2-4747-bf2a-51cb0bee963c}</Project>
+      <Name>TourismV3</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

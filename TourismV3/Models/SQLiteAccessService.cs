@@ -47,6 +47,7 @@ namespace TourismV3.DAL
                 try
                 {
                     var existingRestaurant = (db.Table<RestTable>().Where(s => s.RestAddress == NewRestaurant.RestAddress)).SingleOrDefault();
+                    MessageDialog md;
                     if (!string.IsNullOrEmpty(NewRestaurant.RestAddress) && existingRestaurant == null)
                     {
                         int success = db.Insert(new RestTable()
@@ -62,12 +63,18 @@ namespace TourismV3.DAL
                         });
                         return true;
                     }
-                    else 
+                    else
+                          md = new MessageDialog("Place at this address already exist.");
+                    md.ShowAsync();
                         return false;
+                    
                 }
                 catch (Exception ex)
                 {
+                    
+                  
                     throw ex;
+
                 }
             }
         }
@@ -95,6 +102,7 @@ namespace TourismV3.DAL
                 catch (Exception ex)
                 {
                     throw ex;
+                    
                 }
             }
         }

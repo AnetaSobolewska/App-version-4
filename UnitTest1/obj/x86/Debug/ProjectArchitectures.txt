@@ -1,0 +1,2 @@
+C:\Users\Aneta\Desktop\TourismV3\TourismV3\TourismV3.csproj;x86
+C:\Users\Aneta\Desktop\TourismV3\UnitTest1\UnitTest1.csproj;x86

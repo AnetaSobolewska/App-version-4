@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Storage;
 using Windows.Storage.Streams;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -86,6 +87,7 @@ namespace TourismV3.Common
             catch (Exception e)
             {
                 throw new SuspensionManagerException(e);
+                
             }
         }
 
