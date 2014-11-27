@@ -84,18 +84,19 @@ This grid acts as a root panel for the page that defines two rows:
 
             <!-- List View -->
             <StackPanel Name="List" Margin="10" Background="LightGray" Height="Auto" Grid.Column="1">
-                <TextBlock Text="Restaurant List" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10"/>
                 <StackPanel Margin="10">
-                <ListView
-                        Height="Auto" 
-                        Width="Auto"
-                        ItemsSource="{Binding Restaurants}"
-                        SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
-                        ScrollViewer.VerticalScrollBarVisibility="Visible"
-                        ScrollViewer.VerticalScrollMode="Enabled" 
-                        FontSize="18"
-                        >
-                    <ListView.ItemTemplate>
+                <TextBlock Text="Restaurant List" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10"/>
+                <ListView 
+                    x:Name="RestaList"
+                    Height="Auto" 
+                    Width="Auto"
+                    ItemsSource="{Binding Restaurants}"
+                    SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"
+                    ScrollViewer.VerticalScrollMode="Enabled" 
+                    FontSize="18" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"
+                    >
+                        <ListView.ItemTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding RestName}" FontFamily="Global User Interface" SelectionHighlightColor="DarkGray" Foreground="Black" FontWeight="Bold"/>
                         </DataTemplate>
