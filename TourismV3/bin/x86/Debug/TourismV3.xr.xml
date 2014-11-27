@@ -2,6 +2,7 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="DelRestCommand" />
+    <RootPropertyPathName Name="UpdateRestCommand" />
     <RootPropertyPathName Name="AddRestCommand" />
     <RootPropertyPathName Name="SelectedRestaurant" />
     <RootPropertyPathName Name="RestPicture2" />

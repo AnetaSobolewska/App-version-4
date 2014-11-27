@@ -24,6 +24,7 @@ namespace TourismV3.ViewModels
 
         public RelayCommand AddRestCommand { get; set; }
         public RelayCommand DelRestCommand { get; set; }
+        public RelayCommand UpdateRestCommand { get; set; }
         public RestModel SelectedRestaurant
         {
             get { return this._selectedRestaurant; }
@@ -50,6 +51,8 @@ namespace TourismV3.ViewModels
             this.AddRestCommand = new RelayCommand(insertRestaurant);
             this.Restaurants = _data.GetRestaurants();
             this.DelRestCommand = new RelayCommand(deleteRestaurant);
+            this.UpdateRestCommand = new RelayCommand(updateRestaurant);
+            
         }
 
         public void insertRestaurant(Object obj)
@@ -68,6 +71,19 @@ namespace TourismV3.ViewModels
         public void deleteRestaurant(Object obj)
         {
             bool success = _data.delRestaurant(SelectedRestaurant);
+            if (success)
+            {
+                this.Restaurants = _data.GetRestaurants();
+            }
+            else
+            {
+                ;
+            }
+        }
+
+        public void updateRestaurant(Object obj)
+        {
+            bool success = _data.updateRestaurant(SelectedRestaurant);
             if (success)
             {
                 this.Restaurants = _data.GetRestaurants();

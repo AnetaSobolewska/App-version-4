@@ -35,7 +35,7 @@
         <CommandBar IsOpen="True" IsSticky="True">
             <CommandBar.SecondaryCommands>
                 <AppBarButton Icon="Add" Label="Add Restaurant" Command="{Binding AddRestCommand}"/>
-                <!-- <AppBarButton Icon="Edit" Label="Update Selected" Command="{Binding UpdateRestCommand}"/> -->
+                <AppBarButton Icon="Edit" Label="Update Selected" Command="{Binding UpdateRestCommand}"/> 
                 <AppBarButton Icon="Remove" Label="Delete Selected" Command="{Binding DelRestCommand}"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>

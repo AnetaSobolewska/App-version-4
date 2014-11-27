@@ -222,6 +222,7 @@ namespace TourismV3.TourismV3_XamlTypeInfo
                 userType.Activator = Activate_0_RestViewModel;
                 userType.AddMemberName("AddRestCommand");
                 userType.AddMemberName("DelRestCommand");
+                userType.AddMemberName("UpdateRestCommand");
                 userType.AddMemberName("SelectedRestaurant");
                 userType.AddMemberName("NewRestaurant");
                 userType.AddMemberName("Restaurants");
@@ -330,112 +331,122 @@ namespace TourismV3.TourismV3_XamlTypeInfo
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             that.DelRestCommand = (global::TourismV3.Common.RelayCommand)Value;
         }
-        private object get_2_RestViewModel_SelectedRestaurant(object instance)
+        private object get_2_RestViewModel_UpdateRestCommand(object instance)
+        {
+            var that = (global::TourismV3.ViewModels.RestViewModel)instance;
+            return that.UpdateRestCommand;
+        }
+        private void set_2_RestViewModel_UpdateRestCommand(object instance, object Value)
+        {
+            var that = (global::TourismV3.ViewModels.RestViewModel)instance;
+            that.UpdateRestCommand = (global::TourismV3.Common.RelayCommand)Value;
+        }
+        private object get_3_RestViewModel_SelectedRestaurant(object instance)
         {
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             return that.SelectedRestaurant;
         }
-        private void set_2_RestViewModel_SelectedRestaurant(object instance, object Value)
+        private void set_3_RestViewModel_SelectedRestaurant(object instance, object Value)
         {
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             that.SelectedRestaurant = (global::TourismV3.Models.RestModel)Value;
         }
-        private object get_3_RestViewModel_NewRestaurant(object instance)
+        private object get_4_RestViewModel_NewRestaurant(object instance)
         {
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             return that.NewRestaurant;
         }
-        private void set_3_RestViewModel_NewRestaurant(object instance, object Value)
+        private void set_4_RestViewModel_NewRestaurant(object instance, object Value)
         {
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             that.NewRestaurant = (global::TourismV3.Models.RestModel)Value;
         }
-        private object get_4_RestViewModel_Restaurants(object instance)
+        private object get_5_RestViewModel_Restaurants(object instance)
         {
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             return that.Restaurants;
         }
-        private void set_4_RestViewModel_Restaurants(object instance, object Value)
+        private void set_5_RestViewModel_Restaurants(object instance, object Value)
         {
             var that = (global::TourismV3.ViewModels.RestViewModel)instance;
             that.Restaurants = (global::System.Collections.ObjectModel.ObservableCollection<global::TourismV3.Models.RestModel>)Value;
         }
-        private object get_5_RestModel_ID(object instance)
+        private object get_6_RestModel_ID(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.ID;
         }
-        private void set_5_RestModel_ID(object instance, object Value)
+        private void set_6_RestModel_ID(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.ID = (global::System.Int32)Value;
         }
-        private object get_6_RestModel_RestName(object instance)
+        private object get_7_RestModel_RestName(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestName;
         }
-        private void set_6_RestModel_RestName(object instance, object Value)
+        private void set_7_RestModel_RestName(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestName = (global::System.String)Value;
         }
-        private object get_7_RestModel_RestAddress(object instance)
+        private object get_8_RestModel_RestAddress(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestAddress;
         }
-        private void set_7_RestModel_RestAddress(object instance, object Value)
+        private void set_8_RestModel_RestAddress(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestAddress = (global::System.String)Value;
         }
-        private object get_8_RestModel_RestPhone(object instance)
+        private object get_9_RestModel_RestPhone(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestPhone;
         }
-        private void set_8_RestModel_RestPhone(object instance, object Value)
+        private void set_9_RestModel_RestPhone(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestPhone = (global::System.Int32)Value;
         }
-        private object get_9_RestModel_RestFood(object instance)
+        private object get_10_RestModel_RestFood(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestFood;
         }
-        private void set_9_RestModel_RestFood(object instance, object Value)
+        private void set_10_RestModel_RestFood(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestFood = (global::System.String)Value;
         }
-        private object get_10_RestModel_RestDescription(object instance)
+        private object get_11_RestModel_RestDescription(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestDescription;
         }
-        private void set_10_RestModel_RestDescription(object instance, object Value)
+        private void set_11_RestModel_RestDescription(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestDescription = (global::System.String)Value;
         }
-        private object get_11_RestModel_RestPicture1(object instance)
+        private object get_12_RestModel_RestPicture1(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestPicture1;
         }
-        private void set_11_RestModel_RestPicture1(object instance, object Value)
+        private void set_12_RestModel_RestPicture1(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestPicture1 = (global::System.String)Value;
         }
-        private object get_12_RestModel_RestPicture2(object instance)
+        private object get_13_RestModel_RestPicture2(object instance)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             return that.RestPicture2;
         }
-        private void set_12_RestModel_RestPicture2(object instance, object Value)
+        private void set_13_RestModel_RestPicture2(object instance, object Value)
         {
             var that = (global::TourismV3.Models.RestModel)instance;
             that.RestPicture2 = (global::System.String)Value;
@@ -460,71 +471,77 @@ namespace TourismV3.TourismV3_XamlTypeInfo
                 xamlMember.Getter = get_1_RestViewModel_DelRestCommand;
                 xamlMember.Setter = set_1_RestViewModel_DelRestCommand;
                 break;
+            case "TourismV3.ViewModels.RestViewModel.UpdateRestCommand":
+                userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.ViewModels.RestViewModel");
+                xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "UpdateRestCommand", "TourismV3.Common.RelayCommand");
+                xamlMember.Getter = get_2_RestViewModel_UpdateRestCommand;
+                xamlMember.Setter = set_2_RestViewModel_UpdateRestCommand;
+                break;
             case "TourismV3.ViewModels.RestViewModel.SelectedRestaurant":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.ViewModels.RestViewModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "SelectedRestaurant", "TourismV3.Models.RestModel");
-                xamlMember.Getter = get_2_RestViewModel_SelectedRestaurant;
-                xamlMember.Setter = set_2_RestViewModel_SelectedRestaurant;
+                xamlMember.Getter = get_3_RestViewModel_SelectedRestaurant;
+                xamlMember.Setter = set_3_RestViewModel_SelectedRestaurant;
                 break;
             case "TourismV3.ViewModels.RestViewModel.NewRestaurant":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.ViewModels.RestViewModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "NewRestaurant", "TourismV3.Models.RestModel");
-                xamlMember.Getter = get_3_RestViewModel_NewRestaurant;
-                xamlMember.Setter = set_3_RestViewModel_NewRestaurant;
+                xamlMember.Getter = get_4_RestViewModel_NewRestaurant;
+                xamlMember.Setter = set_4_RestViewModel_NewRestaurant;
                 break;
             case "TourismV3.ViewModels.RestViewModel.Restaurants":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.ViewModels.RestViewModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "Restaurants", "System.Collections.ObjectModel.ObservableCollection`1<TourismV3.Models.RestModel>");
-                xamlMember.Getter = get_4_RestViewModel_Restaurants;
-                xamlMember.Setter = set_4_RestViewModel_Restaurants;
+                xamlMember.Getter = get_5_RestViewModel_Restaurants;
+                xamlMember.Setter = set_5_RestViewModel_Restaurants;
                 break;
             case "TourismV3.Models.RestModel.ID":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "ID", "Int32");
-                xamlMember.Getter = get_5_RestModel_ID;
-                xamlMember.Setter = set_5_RestModel_ID;
+                xamlMember.Getter = get_6_RestModel_ID;
+                xamlMember.Setter = set_6_RestModel_ID;
                 break;
             case "TourismV3.Models.RestModel.RestName":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestName", "String");
-                xamlMember.Getter = get_6_RestModel_RestName;
-                xamlMember.Setter = set_6_RestModel_RestName;
+                xamlMember.Getter = get_7_RestModel_RestName;
+                xamlMember.Setter = set_7_RestModel_RestName;
                 break;
             case "TourismV3.Models.RestModel.RestAddress":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestAddress", "String");
-                xamlMember.Getter = get_7_RestModel_RestAddress;
-                xamlMember.Setter = set_7_RestModel_RestAddress;
+                xamlMember.Getter = get_8_RestModel_RestAddress;
+                xamlMember.Setter = set_8_RestModel_RestAddress;
                 break;
             case "TourismV3.Models.RestModel.RestPhone":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestPhone", "Int32");
-                xamlMember.Getter = get_8_RestModel_RestPhone;
-                xamlMember.Setter = set_8_RestModel_RestPhone;
+                xamlMember.Getter = get_9_RestModel_RestPhone;
+                xamlMember.Setter = set_9_RestModel_RestPhone;
                 break;
             case "TourismV3.Models.RestModel.RestFood":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestFood", "String");
-                xamlMember.Getter = get_9_RestModel_RestFood;
-                xamlMember.Setter = set_9_RestModel_RestFood;
+                xamlMember.Getter = get_10_RestModel_RestFood;
+                xamlMember.Setter = set_10_RestModel_RestFood;
                 break;
             case "TourismV3.Models.RestModel.RestDescription":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestDescription", "String");
-                xamlMember.Getter = get_10_RestModel_RestDescription;
-                xamlMember.Setter = set_10_RestModel_RestDescription;
+                xamlMember.Getter = get_11_RestModel_RestDescription;
+                xamlMember.Setter = set_11_RestModel_RestDescription;
                 break;
             case "TourismV3.Models.RestModel.RestPicture1":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestPicture1", "String");
-                xamlMember.Getter = get_11_RestModel_RestPicture1;
-                xamlMember.Setter = set_11_RestModel_RestPicture1;
+                xamlMember.Getter = get_12_RestModel_RestPicture1;
+                xamlMember.Setter = set_12_RestModel_RestPicture1;
                 break;
             case "TourismV3.Models.RestModel.RestPicture2":
                 userType = (global::TourismV3.TourismV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TourismV3.Models.RestModel");
                 xamlMember = new global::TourismV3.TourismV3_XamlTypeInfo.XamlMember(this, "RestPicture2", "String");
-                xamlMember.Getter = get_12_RestModel_RestPicture2;
-                xamlMember.Setter = set_12_RestModel_RestPicture2;
+                xamlMember.Getter = get_13_RestModel_RestPicture2;
+                xamlMember.Setter = set_13_RestModel_RestPicture2;
                 break;
             }
             return xamlMember;
