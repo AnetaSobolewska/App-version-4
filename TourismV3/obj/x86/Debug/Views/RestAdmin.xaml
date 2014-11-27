@@ -3,17 +3,15 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:TourismV3.Views"
-    xmlns:svm="using:TourismV3.ViewModels"
+    xmlns:rvm="using:TourismV3.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" FontFamily="Global User Interface">
 
     <Page.DataContext>
-        <svm:RestViewModel></svm:RestViewModel>
+        <rvm:RestViewModel></rvm:RestViewModel>
     </Page.DataContext>
     
-    <!-- asda -->
-
     <Page.Resources>
         <x:String x:Key="AppName">Tourism V3 Group 2</x:String>
     </Page.Resources>
@@ -58,123 +56,73 @@ This grid acts as a root panel for the page that defines two rows:
         <!-- This creates a new grid with different columns than the top bar with the title -->
         <Grid Background="#FFFFFF">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="450"/>
-                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-
-            <!-- The fields for adding and removing restaurants are in this stackpanel -->
-            <StackPanel>
-                <!-- This stackpanel is responsible for adding new restaurants -->
-                <StackPanel Name="New" Margin="20,20,20,0" Background="#FFFFFF" Height="323" Grid.Column="0" DataContext="{Binding NewRestaurant}">
-                    <!-- Add New Restaurant Box Header -->
-                    <TextBlock Grid.ColumnSpan="2"  Text="Add new restaurant" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black"/>
-                    <Border x:Name="RoundedBorder" BorderThickness="2" BorderBrush="#000000" CornerRadius="20">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                            </Grid.RowDefinitions>
-                            <!-- Add New Restaurant Fields -->
-                            <TextBlock Grid.Column="0" Grid.Row="0" Text="Restaurant Name" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding RestName, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1" />
-                            <TextBlock Grid.Column="0" Grid.Row="1" Text="Address" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding RestAddress, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="2" Text="Phone Number" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding RestPhone, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="3" Text="Food Type" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding RestFood, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="4" Text="Description" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding RestDescription, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="5" Text="List Picture Path" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="5" Text="{Binding RestPicture1, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="6" Text="Detail Picture Path" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="6" Text="{Binding RestPicture2, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                        </Grid>
-                    </Border>
-                </StackPanel>
-                <!-- This stackpanel is responsible for editing existing restaurants -->
-                <StackPanel Name="Selected" Margin="20,20,20,0" Background="White" Height="323" Grid.Column="0" DataContext="{Binding SelectedRestaurant}">
-                    <!-- Selected Restaurant Box Header -->
-                    <TextBlock Text="Selected restaurant" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black"/>
-                    <Border x:Name="RoundedBorder2" BorderThickness="2" BorderBrush="Black" CornerRadius="20">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                                <RowDefinition Height="42"/>
-                            </Grid.RowDefinitions>
-                            <!-- Selected Restaurant Fields -->
-                            <TextBlock Grid.Column="0" Grid.Row="0" Text="Restaurant Name" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding RestName, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1" Height="25" />
-                            <TextBlock Grid.Column="0" Grid.Row="1" Text="Address" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding RestAddress, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="2" Text="Phone Number" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding RestPhone, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="3" Text="Food Type" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding RestFood, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="4" Text="Description" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding RestDescription, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="5" Text="List Picture Path" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="5" Text="{Binding RestPicture1, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                            <TextBlock Grid.Column="0" Grid.Row="6" Text="Detail Picture Path" Margin="10,5,0,5" VerticalAlignment="Center" Foreground="Black"/>
-                            <TextBox Grid.Column="1" Grid.Row="6" Text="{Binding RestPicture2, Mode=TwoWay}" Margin="10,5,10,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                        </Grid>
-                    </Border>
+            <!-- Add New Restaurant Fields -->
+            <StackPanel Name="New" Margin="10" Background="LightGray" Height="Auto" Grid.Column="0" DataContext="{Binding NewRestaurant}" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollMode="Enabled">
+                <StackPanel Margin="10">
+                <TextBlock Text="Add New Restaurant" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10"/>
+                <TextBlock Text="Restaurant Name" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox  Text="{Binding RestName, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1" />
+                <TextBlock Text="Address" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestAddress, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Phone Number" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestPhone, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Food Type" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestFood, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Description" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestDescription, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="List Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestPicture1, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Detail Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestPicture2, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
                 </StackPanel>
             </StackPanel>
 
-            <!-- The list view starts here -->
-            <StackPanel Name="List" Margin="0,20,20,0" Background="White" Height="Auto" Grid.Column="1" VerticalAlignment="Top">
-                <TextBlock Text="Restaurant list" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black"/>
-                <Border x:Name="RoundedBorder3" BorderThickness="2" BorderBrush="Black" CornerRadius="20" Height="641">
-                    <ListView 
-                        HorizontalAlignment="Left" 
-                        VerticalAlignment="Top"
+            <!-- List View -->
+            <StackPanel Name="List" Margin="10" Background="LightGray" Height="Auto" Grid.Column="1">
+                <TextBlock Text="Restaurant List" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10"/>
+                <StackPanel Margin="10">
+                <ListView
                         Height="Auto" 
                         Width="Auto"
-                        Margin="10,2,10,2" 
                         ItemsSource="{Binding Restaurants}"
                         SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
                         ScrollViewer.VerticalScrollBarVisibility="Visible"
-                        ScrollViewer.VerticalScrollMode="Enabled"
+                        ScrollViewer.VerticalScrollMode="Enabled" 
+                        FontSize="18"
                         >
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <Border BorderBrush="Black" BorderThickness="2" CornerRadius="20">
-                                    <Grid Margin="2,2,2,2" Height="Auto" Width="Auto">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="40"/>
-                                        </Grid.RowDefinitions>
-                                        <TextBlock Grid.Column="0" Text="{Binding RestName, Mode=TwoWay}" Margin="10,0,10,0" FontFamily="Global User Interface" Height="25" HorizontalAlignment="Right" Width="400" Foreground="Black"/>
-                                    </Grid>
-                                </Border>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </Border>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding RestName}" FontFamily="Global User Interface" SelectionHighlightColor="DarkGray" Foreground="Black" FontWeight="Bold"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </StackPanel>
             </StackPanel>
 
+            <StackPanel Name="Selected" Margin="10" Background="LightGray" Height="Auto" Grid.Column="2" DataContext="{Binding SelectedRestaurant}">
+                <StackPanel Margin="10">
+                <TextBlock Text="Selected Restaurant" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10"/>
+                <TextBlock Text="Restaurant Name" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestName, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Address" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestAddress, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Phone Number" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestPhone, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Food Type" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestFood, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Description" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestDescription, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="List Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestPicture1, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock Text="Detail Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBox Text="{Binding RestPicture2, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
+                </StackPanel>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>
