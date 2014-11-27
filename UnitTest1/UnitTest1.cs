@@ -17,7 +17,7 @@ namespace UnitTest1
     public class UnitTest1
     {
         [UITestMethod]
-        public void TestAddDeleteRestaurant()
+        public void TestAddRestaurant()
         {
             
             var restaurants=new ObservableCollection<RestModel>();
