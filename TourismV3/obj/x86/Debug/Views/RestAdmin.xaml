@@ -11,6 +11,8 @@
     <Page.DataContext>
         <svm:RestViewModel></svm:RestViewModel>
     </Page.DataContext>
+    
+    <!-- asda -->
 
     <Page.Resources>
         <x:String x:Key="AppName">Tourism V3 Group 2</x:String>
