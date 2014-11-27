@@ -1,62 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>CORVUS</Machine>
-    <WindowsUser>Dan</WindowsUser>
+    <Machine>KOMPUTER-ANETY</Machine>
+    <WindowsUser>Aneta</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>09c1785a-067b-4c0c-afea-fd140bf97c73</PackageIdentityName>
-    <IntermediateOutputPath>D:\Desktop\TourismV4\TourismV3\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Aneta\Desktop\Appv4\TourismV3\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.exe">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\TourismV3.exe">
       <PackagePath>TourismV3.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.4.1\Redist\Debug\x86\sqlite3.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\RestPicture1.jpg">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\Assets\RestPicture1.jpg">
       <PackagePath>Assets\RestPicture1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\RestPicture2.jpg">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\Assets\RestPicture2.jpg">
       <PackagePath>Assets\RestPicture2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\RestAdmin.xbf">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\Views\RestAdmin.xbf">
       <PackagePath>Views\RestAdmin.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\Startpage.xbf">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\Views\Startpage.xbf">
       <PackagePath>Views\Startpage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\TourismV3.xr.xml">
       <PackagePath>TourismV3.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Aneta\Desktop\Appv4\TourismV3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
