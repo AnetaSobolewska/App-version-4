@@ -13,6 +13,8 @@ namespace TourismV3.Models
     public class RestModel:INotifyPropertyChanged
     {
         // ADDED BY DAN - setting up the event handler for changed properties
+        //just a comment
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void NotifyPropertyChanged(string propertyName)
         {
