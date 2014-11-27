@@ -46,6 +46,9 @@ namespace TourismV3.Views
                 index = itemCount - 1;
 
             this.RestaList.SelectedIndex = index;
+            
         }
+
+
     }
 }
