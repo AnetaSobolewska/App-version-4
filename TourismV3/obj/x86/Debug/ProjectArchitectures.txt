@@ -1,1 +1,1 @@
-C:\Users\Aneta\Desktop\Appv4\TourismV3\TourismV3.csproj;x86
+C:\Users\Petya\Desktop\Project\TourismV3\TourismV3.csproj;x86
