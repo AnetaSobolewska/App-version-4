@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using Windows.Storage;
+using System.Threading.Tasks;
+
 // ADDED BY DAN
 
 using TourismV3.Models;
@@ -39,6 +42,7 @@ namespace TourismV3
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            UpDatabase();
         }
 
         /// <summary>
@@ -46,7 +50,7 @@ namespace TourismV3
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -63,7 +67,7 @@ namespace TourismV3
             using (var db = new SQLite.SQLiteConnection(DBPath))
             {
                 db.CreateTable<RestTable>();
-            }
+            };
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -97,6 +101,27 @@ namespace TourismV3
             // Ensure the current window is active
             Window.Current.Activate();
         }
+
+        // DATABASE COPY STUF
+
+        private async void UpDatabase()
+        {
+            bool isDatabaseExisting = false;
+            try
+            {
+                StorageFile storageFile = await ApplicationData.Current.LocalFolder.GetFileAsync("RestaurantDatabase.sqlite");
+                isDatabaseExisting = true;
+            }
+            catch
+            {
+                isDatabaseExisting = false;
+            }
+            if (!isDatabaseExisting)
+            {
+                StorageFile databaseFile = await Package.Current.InstalledLocation.GetFileAsync("RestaurantDatabase.sqlite");
+                await databaseFile.CopyAsync(ApplicationData.Current.LocalFolder);
+            }
+        }  
 
         /// <summary>
         /// Invoked when Navigation to a certain page fails

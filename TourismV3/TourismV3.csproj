@@ -129,6 +129,9 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="packages.config" />
+    <Content Include="RestaurantDatabase.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="TourismV3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
