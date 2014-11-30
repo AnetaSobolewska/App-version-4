@@ -75,9 +75,9 @@ This grid acts as a root panel for the page that defines two rows:
                 <TextBox Text="{Binding RestFood, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
                 <TextBlock Text="Description" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
                 <TextBox Text="{Binding RestDescription, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                <TextBlock Text="List Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBlock Text="Picture 1 Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
                 <TextBox Text="{Binding RestPicture1, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                <TextBlock Text="Detail Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBlock Text="Picture 2 Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
                 <TextBox Text="{Binding RestPicture2, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
                 </StackPanel>
             </StackPanel>
@@ -119,9 +119,9 @@ This grid acts as a root panel for the page that defines two rows:
                 <TextBox Text="{Binding RestFood, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
                 <TextBlock Text="Description" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
                 <TextBox Text="{Binding RestDescription, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                <TextBlock Text="List Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBlock Text="Picture 1 Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
                 <TextBox Text="{Binding RestPicture1, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
-                <TextBlock Text="Detail Picture Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
+                <TextBlock Text="Picture 2 Path" Margin="0" VerticalAlignment="Center" Foreground="Black" FontSize="18"/>
                 <TextBox Text="{Binding RestPicture2, Mode=TwoWay}" Margin="0,0,0,5" FontFamily="Global User Interface" BorderBrush="Black" BorderThickness="1"/>
                 </StackPanel>
             </StackPanel>

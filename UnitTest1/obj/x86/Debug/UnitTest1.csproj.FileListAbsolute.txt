@@ -199,3 +199,4 @@ D:\Desktop\TourismV4\UnitTest1\obj\x86\Debug\qualifiers.txt
 D:\Desktop\TourismV4\UnitTest1\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Desktop\TourismV4\UnitTest1\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Desktop\TourismV4\UnitTest1\obj\x86\Debug\ProjectArchitectures.txt
+D:\Desktop\TourismV4\UnitTest1\bin\x86\Debug\RestaurantDatabase.sqlite
