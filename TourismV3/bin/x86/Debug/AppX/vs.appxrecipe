@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-30T14:59:43.343</Modified>
+      <Modified>2014-11-30T20:03:54.485</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.exe">
       <PackagePath>TourismV3.exe</PackagePath>
-      <Modified>2014-11-30T14:59:42.991</Modified>
+      <Modified>2014-11-30T22:05:10.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7.2\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
@@ -154,23 +154,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-11-30T13:57:19.574</Modified>
+      <Modified>2014-11-30T20:03:53.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\RestAdmin.xbf">
       <PackagePath>Views\RestAdmin.xbf</PackagePath>
-      <Modified>2014-11-30T13:57:19.574</Modified>
+      <Modified>2014-11-30T20:03:53.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\Startpage.xbf">
       <PackagePath>Views\Startpage.xbf</PackagePath>
-      <Modified>2014-11-30T13:57:19.574</Modified>
+      <Modified>2014-11-30T22:05:09.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.xr.xml">
       <PackagePath>TourismV3.xr.xml</PackagePath>
-      <Modified>2014-11-30T13:57:19.559</Modified>
+      <Modified>2014-11-30T22:05:09.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-30T14:59:43.169</Modified>
+      <Modified>2014-11-30T20:03:54.310</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

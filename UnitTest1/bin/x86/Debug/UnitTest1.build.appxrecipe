@@ -89,14 +89,80 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7.2\Redist\Debug\x86\sqlite3.pdb">
       <PackagePath>sqlite3.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\RestaurantDatabase.sqlite">
-      <PackagePath>RestaurantDatabase.sqlite</PackagePath>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\bellanapoli1.jpg">
+      <PackagePath>Assets\bellanapoli1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\bellanapoli2.jpg">
+      <PackagePath>Assets\bellanapoli2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\cafeknarr1.jpg">
+      <PackagePath>Assets\cafeknarr1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\cafeknarr2.jpg">
+      <PackagePath>Assets\cafeknarr2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\insp1.jpg">
+      <PackagePath>Assets\insp1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\insp2.jpg">
+      <PackagePath>Assets\insp2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\prindsen1.jpg">
+      <PackagePath>Assets\prindsen1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\prindsen2.jpg">
+      <PackagePath>Assets\prindsen2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\raadhuskaelderen1.jpg">
+      <PackagePath>Assets\raadhuskaelderen1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\raadhuskaelderen2.jpg">
+      <PackagePath>Assets\raadhuskaelderen2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\sagafjord1.jpg">
+      <PackagePath>Assets\sagafjord1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\sagafjord2.jpg">
+      <PackagePath>Assets\sagafjord2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\svogerslevkro1.jpg">
+      <PackagePath>Assets\svogerslevkro1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\svogerslevkro2.jpg">
+      <PackagePath>Assets\svogerslevkro2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\upstairs1.jpg">
+      <PackagePath>Assets\upstairs1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\upstairs2.jpg">
+      <PackagePath>Assets\upstairs2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldirostorv2.jpg">
+      <PackagePath>Assets\vivaldirostorv2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldistaender1.jpg">
+      <PackagePath>Assets\vivaldistaender1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldistaender2.jpg">
+      <PackagePath>Assets\vivaldistaender2.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\RestPicture1.jpg">
       <PackagePath>Assets\RestPicture1.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\RestPicture2.jpg">
       <PackagePath>Assets\RestPicture2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vigen1.gif">
+      <PackagePath>Assets\vigen1.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vigen2.gif">
+      <PackagePath>Assets\vigen2.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldirostorv1.gif">
+      <PackagePath>Assets\vivaldirostorv1.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\RestaurantDatabase.sqlite">
+      <PackagePath>RestaurantDatabase.sqlite</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
