@@ -8,6 +8,7 @@ using System.ComponentModel;
 
 namespace TourismV3.Models
 {
+    //note
     public class INotifyHandler
     {
         public event PropertyChangedEventHandler PropertyChanged;
