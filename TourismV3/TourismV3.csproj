@@ -129,6 +129,28 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="packages.config" />
+    <Content Include="Assets\bellanapoli1.jpg" />
+    <Content Include="Assets\bellanapoli2.jpg" />
+    <Content Include="Assets\cafeknarr1.jpg" />
+    <Content Include="Assets\cafeknarr2.jpg" />
+    <Content Include="Assets\insp1.jpg" />
+    <Content Include="Assets\insp2.jpg" />
+    <Content Include="Assets\prindsen1.jpg" />
+    <Content Include="Assets\prindsen2.jpg" />
+    <Content Include="Assets\raadhuskaelderen1.jpg" />
+    <Content Include="Assets\raadhuskaelderen2.jpg" />
+    <Content Include="Assets\sagafjord1.jpg" />
+    <Content Include="Assets\sagafjord2.jpg" />
+    <Content Include="Assets\svogerslevkro1.jpg" />
+    <Content Include="Assets\svogerslevkro2.jpg" />
+    <Content Include="Assets\upstairs1.jpg" />
+    <Content Include="Assets\upstairs2.jpg" />
+    <Content Include="Assets\vigen1.gif" />
+    <Content Include="Assets\vigen2.gif" />
+    <Content Include="Assets\vivaldirostorv1.gif" />
+    <Content Include="Assets\vivaldirostorv2.jpg" />
+    <Content Include="Assets\vivaldistaender1.jpg" />
+    <Content Include="Assets\vivaldistaender2.jpg" />
     <Content Include="RestaurantDatabase.sqlite">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
