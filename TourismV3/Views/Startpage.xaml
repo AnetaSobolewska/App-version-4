@@ -59,28 +59,30 @@
         
 <!-- Restaurant list -->
 
-        <StackPanel Name="List" Margin="10" Background="DarkGray" Height="Auto" Grid.Column="0" Grid.Row="1" Grid.RowSpan="4">
-            <StackPanel Margin="10">
-                <ListView 
-                    Name="RestaList"
-                    Height="Auto" 
-                    Width="Auto"
-                    ItemsSource="{Binding Restaurants}"
-                    SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
-                    ScrollViewer.VerticalScrollBarVisibility="Visible"
-                    ScrollViewer.VerticalScrollMode="Enabled" 
-                    FontSize="18" 
-                    HorizontalContentAlignment="Stretch" 
-                    VerticalContentAlignment="Stretch"
-                    >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding RestName}" SelectionHighlightColor="DarkGray" Foreground="Black" Margin="5,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="20"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackPanel>
-        </StackPanel>
+        <ListView 
+            Name="RestaList"
+            Height="Auto" 
+            Width="Auto"
+            ItemsSource="{Binding Restaurants}"
+            SelectedItem="{Binding SelectedRestaurant, Mode=TwoWay}"
+            ScrollViewer.VerticalScrollBarVisibility="Visible"
+            ScrollViewer.VerticalScrollMode="Enabled" 
+            FontSize="18" 
+            HorizontalContentAlignment="Stretch" 
+            VerticalContentAlignment="Stretch"
+            Margin="10"
+            Background="DarkGray"
+            Grid.Column="0" 
+            Grid.Row="1" 
+            Grid.RowSpan="4"
+            Padding="10"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding RestName}" SelectionHighlightColor="DarkGray" Foreground="Black" Margin="5,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="20"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
         <!-- Main View -->
 

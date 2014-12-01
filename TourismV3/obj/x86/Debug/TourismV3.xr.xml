@@ -126,6 +126,9 @@
       <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Name" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
