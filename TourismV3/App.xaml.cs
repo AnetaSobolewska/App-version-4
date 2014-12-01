@@ -66,7 +66,8 @@ namespace TourismV3
             // ADDED BY DAN - initialize the database if necessary, and creating the table if it doesn't exist.
             using (var db = new SQLite.SQLiteConnection(DBPath))
             {
-                db.CreateTable<RestTable>();
+                // db.CreateTable<RestTable>();
+                ;
             };
 
             Frame rootFrame = Window.Current.Content as Frame;

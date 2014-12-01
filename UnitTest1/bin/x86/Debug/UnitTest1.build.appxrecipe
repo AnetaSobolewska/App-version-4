@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>CORVUS</Machine>
+    <Machine>CORAX</Machine>
     <WindowsUser>Dan</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>32e80653-c8f3-4135-82e6-589e44b3208e</PackageIdentityName>
-    <IntermediateOutputPath>D:\Desktop\TourismV4\UnitTest1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Dan\Desktop\TourismV4\UnitTest1\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Desktop\TourismV4\UnitTest1\bin\x86\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\bin\x86\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\bin\x86\Debug\UnitTest1.dll">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\bin\x86\Debug\UnitTest1.dll">
       <PackagePath>UnitTest1.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\bin\x86\Debug\UnitTest1.pdb">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\bin\x86\Debug\UnitTest1.pdb">
       <PackagePath>UnitTest1.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.pdb">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.pdb">
       <PackagePath>TourismV3.pdb</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll">
@@ -31,7 +31,7 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.exe">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.exe">
       <PackagePath>TourismV3.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Core.dll">
@@ -58,125 +58,125 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\vstest.executionengine.appcontainer.x86.exe">
       <PackagePath>vstest.executionengine.appcontainer.x86.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\Images\UnitTestLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\Images\UnitTestLogo.scale-100.png">
       <PackagePath>Images\UnitTestLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\Images\UnitTestSmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\Images\UnitTestSmallLogo.scale-100.png">
       <PackagePath>Images\UnitTestSmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\Images\UnitTestSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\Images\UnitTestSplashScreen.scale-100.png">
       <PackagePath>Images\UnitTestSplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\Images\UnitTestStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\Images\UnitTestStoreLogo.scale-100.png">
       <PackagePath>Images\UnitTestStoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\SQLite.WinRT81\3.8.7.2\Redist\Debug\x86\sqlite3.pdb">
       <PackagePath>sqlite3.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\bellanapoli1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\bellanapoli1.jpg">
       <PackagePath>Assets\bellanapoli1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\bellanapoli2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\bellanapoli2.jpg">
       <PackagePath>Assets\bellanapoli2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\cafeknarr1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\cafeknarr1.jpg">
       <PackagePath>Assets\cafeknarr1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\cafeknarr2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\cafeknarr2.jpg">
       <PackagePath>Assets\cafeknarr2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\insp1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\insp1.jpg">
       <PackagePath>Assets\insp1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\insp2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\insp2.jpg">
       <PackagePath>Assets\insp2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\prindsen1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\prindsen1.jpg">
       <PackagePath>Assets\prindsen1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\prindsen2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\prindsen2.jpg">
       <PackagePath>Assets\prindsen2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\raadhuskaelderen1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\raadhuskaelderen1.jpg">
       <PackagePath>Assets\raadhuskaelderen1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\raadhuskaelderen2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\raadhuskaelderen2.jpg">
       <PackagePath>Assets\raadhuskaelderen2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\sagafjord1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\sagafjord1.jpg">
       <PackagePath>Assets\sagafjord1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\sagafjord2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\sagafjord2.jpg">
       <PackagePath>Assets\sagafjord2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\svogerslevkro1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\svogerslevkro1.jpg">
       <PackagePath>Assets\svogerslevkro1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\svogerslevkro2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\svogerslevkro2.jpg">
       <PackagePath>Assets\svogerslevkro2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\upstairs1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\upstairs1.jpg">
       <PackagePath>Assets\upstairs1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\upstairs2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\upstairs2.jpg">
       <PackagePath>Assets\upstairs2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldirostorv2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\vivaldirostorv2.jpg">
       <PackagePath>Assets\vivaldirostorv2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldistaender1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\vivaldistaender1.jpg">
       <PackagePath>Assets\vivaldistaender1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldistaender2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\vivaldistaender2.jpg">
       <PackagePath>Assets\vivaldistaender2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\RestPicture1.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\RestPicture1.jpg">
       <PackagePath>Assets\RestPicture1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\RestPicture2.jpg">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\RestPicture2.jpg">
       <PackagePath>Assets\RestPicture2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vigen1.gif">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\vigen1.gif">
       <PackagePath>Assets\vigen1.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vigen2.gif">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\vigen2.gif">
       <PackagePath>Assets\vigen2.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\Assets\vivaldirostorv1.gif">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\Assets\vivaldirostorv1.gif">
       <PackagePath>Assets\vivaldirostorv1.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\RestaurantDatabase.sqlite">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\RestaurantDatabase.sqlite">
       <PackagePath>RestaurantDatabase.sqlite</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\RestAdmin.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\RestAdmin.xbf">
       <PackagePath>Views\RestAdmin.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\Startpage.xbf">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\bin\x86\Debug\Views\Startpage.xbf">
       <PackagePath>Views\Startpage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\TourismV3\bin\x86\Debug\TourismV3.xr.xml">
       <PackagePath>TourismV3.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\TourismV4\UnitTest1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\TourismV4\UnitTest1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
